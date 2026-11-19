@@ -115,40 +115,106 @@
     </section>
 
     <!-- 3. Funciones -->
-    <section class="seccion" id="funciones" aria-labelledby="titulo-funciones">
+    <section class="seccion seccion--funciones" id="funciones" aria-labelledby="titulo-funciones">
       <div class="contenedor">
-        <h2 id="titulo-funciones" class="centrado">Tres cosas, en un solo sitio</h2>
-        <ul class="tarjetas">
-          <li class="tarjeta">
-            <span class="disco"><img src="assets/iconos/percha-bosque.svg" alt="" width="28" height="28"></span>
-            <h3>Inventario</h3>
-            <p>Cada prenda, con sus tallas. Lo que entra y lo que sale, sin hoja de cálculo.</p>
-          </li>
-          <li class="tarjeta">
-            <span class="disco"><img src="assets/iconos/caja-bosque.svg" alt="" width="28" height="28"></span>
-            <h3>Tallas</h3>
-            <p>La camisa de lino, por tallas: cuántas M quedan, y lo ves igual desde la tienda que desde la web.</p>
-          </li>
-          <li class="tarjeta">
-            <span class="disco"><img src="assets/iconos/carrito-bosque.svg" alt="" width="28" height="28"></span>
-            <h3>Ventas online</h3>
-            <p>Los pedidos de tu web descuentan su talla del mismo stock que la tienda.</p>
-            <p class="pendiente">[PENDIENTE: con qué tiendas online se conecta]</p>
-          </li>
-        </ul>
+        <div class="columna-texto centrado">
+          <h2 id="titulo-funciones">Todo en un solo sitio</h2>
+          <p class="entrada">Tus prendas, sus tallas y tus pedidos online, en la misma pantalla.</p>
+        </div>
+
+        <div class="escaparate">
+          <svg class="escaparate__onda" viewBox="0 0 1200 480" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M-20 380 C 180 470, 330 150, 600 250 S 980 40, 1220 110" />
+          </svg>
+
+          <ul class="escaparate__lado escaparate__lado--izq">
+            <li class="tarjeta tarjeta--flota" data-revelar data-profundidad="10">
+              <span class="disco"><img src="assets/iconos/percha-bosque.svg" alt="" width="28" height="28"></span>
+              <h3>Inventario</h3>
+              <p>Cada prenda, con sus tallas. Lo que entra y lo que sale, sin hoja de cálculo.</p>
+            </li>
+            <li class="tarjeta tarjeta--flota" data-revelar data-profundidad="18">
+              <span class="disco"><img src="assets/iconos/caja-bosque.svg" alt="" width="28" height="28"></span>
+              <h3>Tallas</h3>
+              <p>Cuántas M quedan de la camisa de lino, igual desde la tienda que desde la web.</p>
+            </li>
+          </ul>
+
+          <figure class="movil" data-movil data-profundidad="6">
+            <div class="movil__marco" role="img" aria-label="Ejemplo de la pantalla de Combbi: lista de prendas con las tallas que quedan de cada una">
+              <div class="movil__isla" aria-hidden="true"></div>
+              <div class="pantalla" aria-hidden="true">
+                <p class="pantalla__barra"><span>9:41</span><span>100 %</span></p>
+                <p class="pantalla__titulo">Prendas</p>
+                <p class="pantalla__sub">Tienda y web · mismo stock</p>
+                <p class="pantalla__buscar">Buscar prenda o talla</p>
+                <ul class="pantalla__lista">
+                <li class="pantalla__prenda" data-prenda-demo>
+                  <span class="pantalla__nombre">Camisa de lino · verde</span>
+                  <span class="pantalla__tallas"><span class="chip"><b>XS</b> 1</span><span class="chip"><b>S</b> 3</span><span class="chip"><b>M</b> 2</span><span class="chip"><b>L</b> 4</span><span class="chip chip--cero"><b>XL</b> —</span></span>
+                </li>
+                <li class="pantalla__prenda">
+                  <span class="pantalla__nombre">Vestido midi · negro</span>
+                  <span class="pantalla__tallas"><span class="chip"><b>S</b> 2</span><span class="chip chip--cero"><b>M</b> —</span><span class="chip"><b>L</b> 1</span></span>
+                </li>
+                <li class="pantalla__prenda">
+                  <span class="pantalla__nombre">Pantalón de pinza · crudo</span>
+                  <span class="pantalla__tallas"><span class="chip"><b>38</b> 2</span><span class="chip"><b>40</b> 1</span><span class="chip"><b>42</b> 3</span></span>
+                </li>
+                <li class="pantalla__prenda">
+                  <span class="pantalla__nombre">Jersey de punto · gris</span>
+                  <span class="pantalla__tallas"><span class="chip"><b>S</b> 1</span><span class="chip"><b>M</b> 2</span><span class="chip chip--cero"><b>L</b> —</span></span>
+                </li>
+                </ul>
+                <p class="pantalla__aviso" data-aviso>
+                  <img src="assets/iconos/check-lima.svg" alt="" width="16" height="16">
+                  <span>Inventario actualizado · pedido online, M</span>
+                </p>
+              </div>
+            </div>
+            <figcaption class="movil__pie">Ejemplo. Los datos no son reales.</figcaption>
+          </figure>
+
+          <ul class="escaparate__lado escaparate__lado--der">
+            <li class="tarjeta tarjeta--flota" data-revelar data-profundidad="14">
+              <span class="disco"><img src="assets/iconos/carrito-bosque.svg" alt="" width="28" height="28"></span>
+              <h3>Ventas online</h3>
+              <p>Los pedidos de tu web descuentan su talla del mismo stock que la tienda.</p>
+              <p class="pendiente">[PENDIENTE: con qué tiendas online se conecta]</p>
+            </li>
+            <li class="tarjeta tarjeta--flota" data-revelar data-profundidad="22">
+              <span class="disco"><img src="assets/iconos/check-bosque.svg" alt="" width="28" height="28"></span>
+              <h3>Aviso de cambios</h3>
+              <p>Cada venta muestra «Inventario actualizado», para que sepas que el número es el bueno.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- 4. Cómo funciona -->
-    <section class="seccion seccion--suave" id="como-funciona" aria-labelledby="titulo-como">
+    <section class="seccion seccion--rejilla" id="como-funciona" aria-labelledby="titulo-como">
       <div class="contenedor capitulo">
-        <figure class="capitulo__media">
-          <div class="foto-pendiente" role="img" aria-label="Espacio reservado para una foto de una dueña de tienda de moda consultando el stock en su móvil">
-            <span class="pendiente">[PENDIENTE: foto de una dueña en su tienda mirando el móvil]</span>
+        <figure class="escena" data-escena>
+          <div class="escena__circulo" aria-hidden="true"></div>
+          <!-- Cuando llegue la foto: sustituye el div por
+               <img class="escena__persona" src="assets/fotos/duena.png" alt="Dueña de una tienda de moda consultando el stock en su móvil" width="640" height="800"> -->
+          <div class="escena__persona escena__persona--pendiente" role="img" aria-label="Espacio reservado para la foto de una dueña de tienda de moda mirando el móvil">
+            <span class="pendiente">[PENDIENTE: foto recortada, PNG sin fondo, de una dueña en su tienda mirando el móvil]</span>
           </div>
-          <p class="capsula capsula--flotante">
+
+          <p class="flotante flotante--a capsula" data-profundidad="24">
             <img class="capsula__icono" src="assets/iconos/check-lima.svg" alt="" width="20" height="20">
             Quedan 2 M de la camisa de lino
+          </p>
+          <div class="flotante flotante--b mini" data-profundidad="36">
+            <p class="mini__etiqueta">Pedido online</p>
+            <p class="mini__dato">Vestido midi · S</p>
+            <p class="mini__cambio">Quedaban 3 → quedan 2</p>
+          </div>
+          <p class="flotante flotante--c capsula capsula--lima" data-profundidad="16">
+            <img class="capsula__icono" src="assets/iconos/caja-bosque.svg" alt="" width="20" height="20">
+            Inventario actualizado
           </p>
         </figure>
 
