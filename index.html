@@ -52,14 +52,14 @@
 
     <!-- 1. Apertura -->
     <section class="apertura" aria-labelledby="titulo-principal">
-      <div class="contenedor apertura__texto">
+      <div class="contenedor apertura__grid">
+      <div class="apertura__texto">
         <h1 id="titulo-principal" class="apertura__titulo">
           <span class="etiqueta-superior">App de inventario para tiendas de moda</span>
-          <span class="display">Qué tallas te quedan, sin ir al almacén</span>
+          <span class="display display--hero">Qué tallas te quedan, sin ir al almacén</span>
         </h1>
         <p class="apertura__apoyo">
           Combbi reúne en un solo sitio tus prendas, sus tallas y tus ventas online. Cada venta descuenta su talla, venga de la tienda o de la web.
-          <span class="pendiente">[PENDIENTE: confirmar que el producto descuenta la talla en tienda y online a la vez]</span>
         </p>
         <div class="acciones">
           <a class="boton boton--primario" href="#lista-de-espera">Únete a la lista de espera</a>
@@ -67,41 +67,26 @@
         </div>
       </div>
 
-      <!-- Ficha de ejemplo (objeto que funciona) -->
-      <div class="contenedor">
-        <article class="ficha" aria-labelledby="ficha-titulo">
-          <div class="ficha__cabecera">
-            <div>
-              <p class="ficha__aviso">Ejemplo</p>
-              <h2 id="ficha-titulo" class="ficha__titulo">Camisa de lino · verde</h2>
-            </div>
-            <p class="ficha__total"><span data-total>10</span> en stock</p>
-          </div>
+      <div class="apertura__escena">
+        <div class="escena" data-escena>
+          <div class="escena__circulo" aria-hidden="true"></div>
+          <img class="escena__persona" src="assets/fotos/duena.webp" alt="Dueña de una tienda de moda sonriendo mientras mira el stock de sus prendas en el móvil" width="996" height="1400" fetchpriority="high">
 
-          <fieldset class="ficha__tallas">
-            <legend>Elige una talla</legend>
-            <div class="tallas" data-tallas>
-              <label class="talla"><input type="radio" name="talla" value="XS"><span class="talla__nombre">XS</span><span class="talla__cantidad" data-cantidad="XS">1</span></label>
-              <label class="talla"><input type="radio" name="talla" value="S"><span class="talla__nombre">S</span><span class="talla__cantidad" data-cantidad="S">3</span></label>
-              <label class="talla"><input type="radio" name="talla" value="M" checked><span class="talla__nombre">M</span><span class="talla__cantidad" data-cantidad="M">2</span></label>
-              <label class="talla"><input type="radio" name="talla" value="L"><span class="talla__nombre">L</span><span class="talla__cantidad" data-cantidad="L">4</span></label>
-              <label class="talla"><input type="radio" name="talla" value="XL"><span class="talla__nombre">XL</span><span class="talla__cantidad" data-cantidad="XL">0</span></label>
-            </div>
-          </fieldset>
-
-          <p class="ficha__nota">El mismo número vale para la tienda y para la web.</p>
-
-          <div class="ficha__acciones">
-            <button class="boton boton--primario" type="button" data-venta="tienda">Vender una en tienda</button>
-            <button class="boton boton--borde" type="button" data-venta="online">Entra un pedido online</button>
-            <button class="boton-texto" type="button" data-reiniciar hidden>Reiniciar ejemplo</button>
-          </div>
-
-          <p class="capsula ficha__estado" data-estado role="status" aria-live="polite">
+          <p class="flotante flotante--a capsula" data-profundidad="24">
             <img class="capsula__icono" src="assets/iconos/check-lima.svg" alt="" width="20" height="20">
-            <span data-estado-texto>Quedan 2 M de la camisa de lino</span>
+            Quedan 2 M de la camisa de lino
           </p>
-        </article>
+          <div class="flotante flotante--b mini" data-profundidad="36">
+            <p class="mini__etiqueta">Pedido online</p>
+            <p class="mini__dato">Vestido midi · S</p>
+            <p class="mini__cambio">Quedaban 3 → quedan 2</p>
+          </div>
+          <p class="flotante flotante--c capsula capsula--oscura" data-profundidad="16">
+            <img class="capsula__icono" src="assets/iconos/check-bosque.svg" alt="" width="20" height="20">
+            Inventario actualizado
+          </p>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -195,28 +180,41 @@
     <!-- 4. Cómo funciona -->
     <section class="seccion seccion--rejilla" id="como-funciona" aria-labelledby="titulo-como">
       <div class="contenedor capitulo">
-        <figure class="escena" data-escena>
-          <div class="escena__circulo" aria-hidden="true"></div>
-          <!-- Cuando llegue la foto: sustituye el div por
-               <img class="escena__persona" src="assets/fotos/duena.png" alt="Dueña de una tienda de moda consultando el stock en su móvil" width="640" height="800"> -->
-          <div class="escena__persona escena__persona--pendiente" role="img" aria-label="Espacio reservado para la foto de una dueña de tienda de moda mirando el móvil">
-            <span class="pendiente">[PENDIENTE: foto recortada, PNG sin fondo, de una dueña en su tienda mirando el móvil]</span>
-          </div>
+        <div class="capitulo__media">
+    <article class="ficha" aria-labelledby="ficha-titulo">
+      <div class="ficha__cabecera">
+        <div>
+          <p class="ficha__aviso">Ejemplo</p>
+          <h2 id="ficha-titulo" class="ficha__titulo">Camisa de lino · verde</h2>
+        </div>
+        <p class="ficha__total"><span data-total>10</span> en stock</p>
+      </div>
 
-          <p class="flotante flotante--a capsula" data-profundidad="24">
-            <img class="capsula__icono" src="assets/iconos/check-lima.svg" alt="" width="20" height="20">
-            Quedan 2 M de la camisa de lino
-          </p>
-          <div class="flotante flotante--b mini" data-profundidad="36">
-            <p class="mini__etiqueta">Pedido online</p>
-            <p class="mini__dato">Vestido midi · S</p>
-            <p class="mini__cambio">Quedaban 3 → quedan 2</p>
-          </div>
-          <p class="flotante flotante--c capsula capsula--lima" data-profundidad="16">
-            <img class="capsula__icono" src="assets/iconos/caja-bosque.svg" alt="" width="20" height="20">
-            Inventario actualizado
-          </p>
-        </figure>
+      <fieldset class="ficha__tallas">
+        <legend>Elige una talla</legend>
+        <div class="tallas" data-tallas>
+          <label class="talla"><input type="radio" name="talla" value="XS"><span class="talla__nombre">XS</span><span class="talla__cantidad" data-cantidad="XS">1</span></label>
+          <label class="talla"><input type="radio" name="talla" value="S"><span class="talla__nombre">S</span><span class="talla__cantidad" data-cantidad="S">3</span></label>
+          <label class="talla"><input type="radio" name="talla" value="M" checked><span class="talla__nombre">M</span><span class="talla__cantidad" data-cantidad="M">2</span></label>
+          <label class="talla"><input type="radio" name="talla" value="L"><span class="talla__nombre">L</span><span class="talla__cantidad" data-cantidad="L">4</span></label>
+          <label class="talla"><input type="radio" name="talla" value="XL"><span class="talla__nombre">XL</span><span class="talla__cantidad" data-cantidad="XL">0</span></label>
+        </div>
+      </fieldset>
+
+      <p class="ficha__nota">El mismo número vale para la tienda y para la web.</p>
+
+      <div class="ficha__acciones">
+        <button class="boton boton--primario" type="button" data-venta="tienda">Vender una en tienda</button>
+        <button class="boton boton--borde" type="button" data-venta="online">Entra un pedido online</button>
+        <button class="boton-texto" type="button" data-reiniciar hidden>Reiniciar ejemplo</button>
+      </div>
+
+      <p class="capsula ficha__estado" data-estado role="status" aria-live="polite">
+        <img class="capsula__icono" src="assets/iconos/check-lima.svg" alt="" width="20" height="20">
+        <span data-estado-texto>Quedan 2 M de la camisa de lino</span>
+      </p>
+    </article>
+        </div>
 
         <div class="capitulo__texto">
           <h2 id="titulo-como">Así se mantiene al día</h2>

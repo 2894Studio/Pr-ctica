@@ -61,6 +61,13 @@
 - SEO: un solo h1 con la palabra clave, `title`, meta description, Open Graph y textos alt.
 - Accesibilidad: contrastes AA según la tabla de `design.md`, foco visible, enlace para saltar al contenido, menú usable con teclado (Esc cierra) y `prefers-reduced-motion`.
 
+## Cambios posteriores
+
+- **Apertura rehecha:** titular grande a la izquierda y, a la derecha, la dueña de la tienda sobre un círculo `bosque`, con tarjetas flotantes («Quedan 2 M de la camisa de lino», «Pedido online», «Inventario actualizado»).
+- La foto se generó en Canva y se recortó quitando un fondo magenta (`assets/fotos/duena.webp`).
+- La ficha de ejemplo de la camisa pasó de la apertura a «Así se mantiene al día».
+- «Funciones» ahora es un móvil central con tarjetas alrededor y una línea lima ondulada.
+
 ## Decisiones posteriores
 
 - Contacto solo por email; sin WhatsApp ni teléfono.
