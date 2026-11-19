@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <title>Combbi: app de inventario para tiendas de moda</title>
+  <meta name="description" content="Ves qué prendas y qué tallas te quedan, en tienda y online, sin ir al almacén. Combbi abre pronto a las primeras tiendas de moda independientes.">
+  <meta name="theme-color" content="#D9FF8F">
+  <!-- [PENDIENTE: dominio] Cuando exista, activar el canonical y cambiar las URL de og:url y og:image
+  <link rel="canonical" href="https://DOMINIO/">
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Combbi">
+  <meta property="og:title" content="Combbi: app de inventario para tiendas de moda">
+  <meta property="og:description" content="Qué tallas te quedan, sin ir al almacén. Prendas, tallas y ventas online en un solo sitio.">
+  <meta property="og:image" content="assets/logos/combbi-wordmark-sobre-verde.png">
+  <meta property="og:image:alt" content="Logotipo de Combbi en verde lima sobre fondo verde bosque">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/combbi-icono-sobre-verde.svg">
+  <link rel="preload" href="assets/fuentes/plus-jakarta-sans-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fotos/duena.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="nav" id="inicio">
+    <div class="wrap nav__fila">
+      <a class="saltar" href="#contenido">Saltar al contenido</a>
+      <a class="nav__logo" href="#inicio">
+        <img src="assets/logos/combbi-wordmark-oscuro.svg" alt="Combbi, ir al inicio" width="128" height="33">
+      </a>
+
+      <a class="btn btn--primario btn--compacto nav__cta" href="#lista-de-espera">Lista de espera</a>
+
+      <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="nav__barras" aria-hidden="true"></span>
+        <span class="nav__boton-texto">Menú</span>
+      </button>
+
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a class="enlace" href="#probar">Probar</a></li>
+          <li><a class="enlace" href="#funciones">Funciones</a></li>
+          <li><a class="enlace" href="#como-funciona">Cómo funciona</a></li>
+          <li><a class="enlace" href="#limites">Qué no hace</a></li>
+          <li class="menu__cta"><a class="btn btn--primario btn--compacto" href="#lista-de-espera">Lista de espera</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- 1. Apertura -->
+    <section class="hero" data-enter aria-labelledby="titulo-principal">
+      <div class="wrap hero__rejilla">
+        <div class="hero__texto hero-text">
+          <h1 id="titulo-principal" class="hero__h1">
+            <span class="display">Qué tallas te quedan, sin ir al almacén</span>
+            <span class="hero__sub">App de inventario para tiendas de moda</span>
+          </h1>
+          <p class="hero__lead">Combbi reúne en un solo sitio tus prendas, sus tallas y tus ventas online. Cada venta descuenta su talla, venga de la tienda o de la web.</p>
+          <div class="acciones">
+            <a class="btn btn--primario" href="#lista-de-espera">Únete a la lista de espera</a>
+            <a class="btn btn--borde" href="#probar">Pruébalo aquí</a>
+          </div>
+        </div>
+
+        <div class="escena">
+          <div class="escena__disco" aria-hidden="true"></div>
+          <img class="escena__persona" src="assets/fotos/duena.webp" alt="Dueña de una tienda de moda sonriendo mientras mira el stock de sus prendas en el móvil" width="996" height="1400" fetchpriority="high">
+
+          <p class="chip chip--a">
+            <img class="chip__icono" src="assets/iconos/check-lima.svg" alt="" width="20" height="20">
+            Quedan 2 M de la camisa de lino
+          </p>
+          <div class="nota chip--b">
+            <p class="nota__etiqueta">Pedido online</p>
+            <p class="nota__dato">Vestido midi · S</p>
+            <p class="nota__cambio">Quedaban 3 → quedan 2</p>
+          </div>
+          <p class="chip chip--c chip--oscuro">
+            <img class="chip__icono" src="assets/iconos/check-bosque.svg" alt="" width="20" height="20">
+            Inventario actualizado
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Probar: la escena y la ficha -->
+    <section class="seccion seccion--crema" id="probar" aria-labelledby="titulo-escena">
+      <div class="wrap dos">
+        <div class="dos__texto">
+          <h2 id="titulo-escena">La camisa verde, en M</h2>
+          <p class="entrada">Una clienta la pide. Crees que queda una. Vas al almacén y no está: se vendió online esta mañana y nadie lo apuntó.</p>
+          <p class="entrada entrada--fuerte">Con Combbi lo ves antes de ir. Prueba la ficha: pulsa «Venta en tienda» o «Pedido online».</p>
+        </div>
+
+        <article class="ficha" data-ui data-visual aria-labelledby="ficha-titulo">
+          <div class="ficha__cabecera">
+            <div>
+              <p class="ficha__aviso">Ejemplo</p>
+              <h3 id="ficha-titulo" class="ficha__titulo">Camisa de lino · verde</h3>
+            </div>
+            <p class="ficha__total"><span data-total>10</span> en stock</p>
+          </div>
+
+          <fieldset class="ficha__tallas">
+            <legend>Elige una talla</legend>
+            <div class="tallas" data-tallas>
+              <label class="talla"><input type="radio" name="talla" value="XS"><span class="talla__nombre">XS</span><span class="talla__cantidad" data-cantidad="XS">1</span></label>
+              <label class="talla"><input type="radio" name="talla" value="S"><span class="talla__nombre">S</span><span class="talla__cantidad" data-cantidad="S">3</span></label>
+              <label class="talla"><input type="radio" name="talla" value="M" checked><span class="talla__nombre">M</span><span class="talla__cantidad" data-cantidad="M">2</span></label>
+              <label class="talla"><input type="radio" name="talla" value="L"><span class="talla__nombre">L</span><span class="talla__cantidad" data-cantidad="L">4</span></label>
+              <label class="talla"><input type="radio" name="talla" value="XL"><span class="talla__nombre">XL</span><span class="talla__cantidad" data-cantidad="XL">0</span></label>
+            </div>
+          </fieldset>
+
+          <p class="ficha__nota">El mismo número vale para la tienda y para la web.</p>
+
+          <div class="ficha__acciones">
+            <button class="btn btn--primario" type="button" data-venta="tienda">Venta en tienda</button>
+            <button class="btn btn--borde" type="button" data-venta="online">Pedido online</button>
+            <button class="enlace enlace--boton" type="button" data-reiniciar hidden>Reiniciar ejemplo</button>
+          </div>
+
+          <p class="chip ficha__estado" data-estado role="status" aria-live="polite">
+            <img class="chip__icono" src="assets/iconos/check-lima.svg" alt="" width="20" height="20">
+            <span data-estado-texto>Quedan 2 M de la camisa de lino</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. Funciones: el móvil -->
+    <section class="seccion" id="funciones" aria-labelledby="titulo-funciones">
+      <div class="wrap dos dos--movil">
+        <figure class="movil" data-movil>
+          <svg class="movil__onda" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <path d="M-20 470 C 120 590, 250 250, 380 330 S 560 120, 640 160"/>
+          </svg>
+          <div class="movil__marco" role="img" aria-label="Ejemplo de la pantalla de Combbi: lista de prendas con las tallas que quedan de cada una">
+            <div class="movil__isla" aria-hidden="true"></div>
+            <div class="pantalla" aria-hidden="true">
+              <p class="pantalla__barra"><span>9:41</span><span>100 %</span></p>
+              <p class="pantalla__titulo">Prendas</p>
+              <p class="pantalla__sub">Tienda y web · mismo stock</p>
+              <ul class="pantalla__lista">
+                <li class="pantalla__prenda" data-prenda-demo>
+                  <span class="pantalla__nombre">Camisa de lino · verde</span>
+                  <span class="pantalla__tallas">
+                    <span class="mini"><b>XS</b> 1</span><span class="mini"><b>S</b> 3</span><span class="mini" data-mini-m><b>M</b> 2</span><span class="mini"><b>L</b> 4</span><span class="mini mini--cero"><b>XL</b> —</span>
+                  </span>
+                </li>
+                <li class="pantalla__prenda">
+                  <span class="pantalla__nombre">Vestido midi · negro</span>
+                  <span class="pantalla__tallas"><span class="mini"><b>S</b> 2</span><span class="mini mini--cero"><b>M</b> —</span><span class="mini"><b>L</b> 1</span></span>
+                </li>
+                <li class="pantalla__prenda">
+                  <span class="pantalla__nombre">Pantalón de pinza · crudo</span>
+                  <span class="pantalla__tallas"><span class="mini"><b>38</b> 2</span><span class="mini"><b>40</b> 1</span><span class="mini"><b>42</b> 3</span></span>
+                </li>
+                <li class="pantalla__prenda">
+                  <span class="pantalla__nombre">Jersey de punto · gris</span>
+                  <span class="pantalla__tallas"><span class="mini"><b>S</b> 1</span><span class="mini"><b>M</b> 2</span><span class="mini mini--cero"><b>L</b> —</span></span>
+                </li>
+              </ul>
+              <p class="pantalla__aviso" data-aviso>
+                <img src="assets/iconos/check-lima.svg" alt="" width="16" height="16">
+                <span>Inventario actualizado · pedido online, M</span>
+              </p>
+            </div>
+          </div>
+        </figure>
+
+        <div class="dos__texto">
+          <h2 id="titulo-funciones">Inventario, tallas y ventas online en un solo sitio</h2>
+          <p class="entrada">Tus prendas, sus tallas y tus pedidos online, en la misma pantalla.</p>
+          <ul class="filas">
+            <li class="fila">
+              <span class="disco"><img src="assets/iconos/percha-bosque.svg" alt="" width="24" height="24"></span>
+              <div>
+                <h3>Inventario</h3>
+                <p>Cada prenda con sus tallas. Lo que entra y lo que sale, sin hoja de cálculo.</p>
+              </div>
+            </li>
+            <li class="fila">
+              <span class="disco"><img src="assets/iconos/caja-bosque.svg" alt="" width="24" height="24"></span>
+              <div>
+                <h3>Tallas</h3>
+                <p>Cuántas M quedan de la camisa de lino, igual desde la tienda que desde la web.</p>
+              </div>
+            </li>
+            <li class="fila">
+              <span class="disco"><img src="assets/iconos/carrito-bosque.svg" alt="" width="24" height="24"></span>
+              <div>
+                <h3>Ventas online</h3>
+                <p>Los pedidos de tu web descuentan su talla del mismo stock que la tienda. <span class="pendiente">[PENDIENTE: con qué tiendas online se conecta]</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Cómo funciona -->
+    <section class="seccion seccion--suave" id="como-funciona" aria-labelledby="titulo-como">
+      <div class="wrap">
+        <div class="cabecera-seccion">
+          <h2 id="titulo-como">Cómo se mantiene al día tu inventario</h2>
+          <p class="entrada">No hay que contar ni apuntar nada aparte. Cada venta hace el trabajo.</p>
+        </div>
+        <ol class="pasos">
+          <li class="paso">
+            <p class="paso__num" aria-hidden="true">1</p>
+            <h3>Vendes en tienda</h3>
+            <p>Se descuenta esa talla de esa prenda.</p>
+          </li>
+          <li class="paso">
+            <p class="paso__num" aria-hidden="true">2</p>
+            <h3>Entra un pedido online</h3>
+            <p>Se descuenta la misma talla, del mismo stock.</p>
+          </li>
+          <li class="paso">
+            <p class="paso__num" aria-hidden="true">3</p>
+            <h3>Abres Combbi</h3>
+            <p>Ves qué prendas y qué tallas quedan. Sin ir al almacén.</p>
+          </li>
+        </ol>
+        <a class="btn btn--primario" href="#lista-de-espera">Únete a la lista de espera</a>
+      </div>
+    </section>
+
+    <!-- 5. Lo que no hace -->
+    <section class="seccion seccion--bosque" id="limites" aria-labelledby="titulo-limites">
+      <div class="wrap dos dos--limites">
+        <div class="dos__texto">
+          <h2 id="titulo-limites">Lo que la app no hace</h2>
+          <p class="entrada">Está pensada para tiendas de moda independientes, con una o dos tiendas y su web. Por eso deja fuera lo que no necesitas.</p>
+          <a class="btn btn--lima" href="#lista-de-espera">Únete a la lista de espera</a>
+        </div>
+        <ul class="lista-limites">
+          <li>
+            <h3>Sin facturas ni contabilidad</h3>
+            <p>Lleva prendas y tallas. La facturación, con tu programa de siempre.</p>
+          </li>
+          <li>
+            <h3>Prendas y tallas, no «SKU»</h3>
+            <p>Habla como en la tienda: prendas, tallas y pedidos.</p>
+          </li>
+          <li>
+            <h3>No es para cadenas</h3>
+            <p>Sin almacenes centrales ni decenas de tiendas. Una o dos, más tu web.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie closing">
+    <!-- 6. Cierre -->
+    <div class="cierre" id="lista-de-espera">
+      <svg class="cierre__formas" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <rect width="1200" height="600" fill="#0B4F2E"/>
+        <path d="M-40 120 L520 -40 L700 260 L80 420 Z" fill="#2E7D4B"/>
+        <path d="M600 -60 L1260 40 L1180 360 L760 300 Z" fill="#D9FF8F"/>
+        <path d="M-60 420 L380 300 L560 660 L-60 660 Z" fill="#F4EFE4"/>
+        <path d="M700 360 L1260 260 L1260 660 L640 660 Z" fill="#2E7D4B"/>
+        <path d="M300 200 L900 140 L860 420 L360 470 Z" fill="#E0F9BB" opacity=".35"/>
+      </svg>
+
+      <div class="wrap">
+        <div class="panel">
+          <h2 id="titulo-cierre" class="display display--cierre">Tu tienda de moda, mejor gestionada</h2>
+          <p class="entrada">Combbi aún no está abierta. Apúntate a la lista de espera y te avisamos cuando puedas probarla en tu tienda.</p>
+          <div class="acciones acciones--centro">
+            <!-- [PENDIENTE: email] Añade la dirección después de "mailto:" (también en el pie) -->
+            <a class="btn btn--primario" href="mailto:?subject=Lista%20de%20espera%20de%20Combbi&amp;body=Hola%2C%20quiero%20apuntarme%20a%20la%20lista%20de%20espera%20de%20Combbi.%0A%0ANombre%20de%20la%20tienda%3A%20%0ACiudad%3A%20%0AWeb%20de%20la%20tienda%3A%20">Únete a la lista de espera</a>
+          </div>
+          <p class="panel__nota">Se abre tu correo con el mensaje preparado. Solo tienes que enviarlo.</p>
+          <p class="pendiente">[PENDIENTE: email de contacto]</p>
+        </div>
+      </div>
+    </div>
+    <div class="pie__directorio">
+    <div class="wrap">
+      <div class="pie__columnas">
+        <div>
+          <img src="assets/logos/combbi-wordmark-oscuro.svg" alt="Combbi" width="128" height="33">
+          <p class="pie__lema">Moda independiente. Sin complicaciones.</p>
+        </div>
+        <nav aria-label="Secciones">
+          <h3 class="pie__titulo">Combbi</h3>
+          <ul>
+            <li><a class="enlace" href="#probar">Probar</a></li>
+            <li><a class="enlace" href="#funciones">Funciones</a></li>
+            <li><a class="enlace" href="#como-funciona">Cómo funciona</a></li>
+            <li><a class="enlace" href="#lista-de-espera">Lista de espera</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3 class="pie__titulo">Contacto</h3>
+          <ul>
+            <li><a class="enlace" href="mailto:?subject=Combbi">Escríbenos por email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© <span data-anio>2026</span> Combbi</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>

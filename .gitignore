@@ -1,0 +1,6 @@
+# Skills instaladas con `npx skills add` (se reinstalan: Leonxlnx/taste-skill y pbakaus/impeccable)
+.agents/
+.claude/
+# Informes y perfiles del comprobador
+.taste-skill/
+v2/.taste-skill/
